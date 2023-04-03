@@ -1,8 +1,10 @@
 package com.springboot.blog.entity;
 
 import jakarta.persistence.*;
+import lombok.Data;
 
 @Entity
+@Data
 @Table(name = "posts", uniqueConstraints = {@UniqueConstraint(columnNames = {"title"})})
 public class Post {
 
