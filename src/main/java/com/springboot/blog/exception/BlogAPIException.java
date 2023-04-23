@@ -17,4 +17,13 @@ public class BlogAPIException extends RuntimeException {
         this.status = status;
         this.message = message1;
     }
+
+    public HttpStatus getStatus() {
+        return status;
+    }
+
+    @Override
+    public String getMessage() {
+        return message;
+    }
 }
